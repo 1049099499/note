@@ -22,7 +22,7 @@ cluster-enabled yes
 cluster-config-file node7001.conf
 #AOF方式追加刷盘
 appendonly yes
-#外网是否可以访问，默认是yes,如果配置了no,那么bind不绑定除了127.0.0.1，其他ip依然可以访问
+#外网是否可以访问，默认是yes,如果配置了yes,只有在bind中指定的IP可以访问
 protected-mode no
 #当前节点的密码
 requirepass redis
